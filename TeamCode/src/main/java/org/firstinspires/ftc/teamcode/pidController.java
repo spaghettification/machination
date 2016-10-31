@@ -30,7 +30,7 @@ public void Correction(){
       else if (Correction<MinCorrection){Correction=MinCorrection}
         else Correction=Correction
     
-    if (Target>getIntegratedZheading){
+    if (getIntegratedZheading>Target){
       FrontLeft.setPower(Power+Correction)
       FrontRight.setPower(Power-Correction)
       BackLeft.setPower(Power+Correction)
